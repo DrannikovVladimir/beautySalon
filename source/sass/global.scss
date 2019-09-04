@@ -24,3 +24,34 @@
     font-weight: 700;
     font-style: normal;
 }
+
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+
+  @include Montserrat_regular();
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+a {
+  font-family: inherit;
+  text-decoration: none;
+}
+
+input[type=text] {
+  font-family: inherit;
+}
