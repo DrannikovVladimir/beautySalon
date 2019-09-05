@@ -25,6 +25,16 @@
     font-style: normal;
 }
 
+@font-face {
+    font-family: 'Andantino script';
+    src: local('Andantino script'), local('Andantinoscript'),
+        url('../fonts/Andantinoscript.woff2') format('woff2'),
+        url('../fonts/Andantinoscript.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
 html {
   box-sizing: border-box;
 }
@@ -36,6 +46,7 @@ html {
 }
 
 body {
+  max-width: 1240px;
   margin: 0;
   padding: 0;
 
@@ -50,8 +61,40 @@ img {
 a {
   font-family: inherit;
   text-decoration: none;
+  color: inherit;
 }
 
 input[type=text] {
   font-family: inherit;
+}
+
+.button {
+  display: inline-block;
+  min-width: 175px;
+  padding: 18px 20px 19px;
+  border: 1px solid $accent-color;
+  border-radius: 3px;
+
+  color: #ffffff;
+  @include Montserrat_regular(14px, 14px);
+
+  background-color: $accent-color;
+  cursor: pointer;
+
+  &:hover {
+    border-color: darken($accent-color, 10%);
+    background-color: darken($accent-color, 10%);
+    color: #ffffff;
+  }
+
+  &:active {
+    color: darken(#ffffff, 50%);
+  }
+
+  &--nobg {
+    border: 1px solid $accent-color;
+
+    color: $accent-color;
+    background-color: transparent;
+  }
 }
