@@ -47,7 +47,7 @@ html {
 
 body {
   max-width: 1240px;
-  margin: 0;
+  margin: 0 auto;
   padding: 0;
 
   @include Montserrat_regular();
@@ -76,6 +76,7 @@ input[type=text] {
   border-radius: 3px;
 
   color: #ffffff;
+  text-align: center;
   @include Montserrat_regular(14px, 14px);
 
   background-color: $accent-color;
@@ -97,4 +98,18 @@ input[type=text] {
     color: $accent-color;
     background-color: transparent;
   }
+}
+
+.visually-hidden:not(:focus):not(:active),
+input[type="checkbox"].visually-hidden,
+input[type="radio"].visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
 }

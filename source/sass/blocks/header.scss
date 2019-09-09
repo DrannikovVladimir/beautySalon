@@ -14,7 +14,7 @@
   background-image: url('../img/header-bg-desktop.jpg');
   background-repeat: no-repeat;
   background-position: right bottom;
-  background-size: 513px auto;
+  background-size: 500px auto;
 }
 
 .page-header__logo {
@@ -85,4 +85,41 @@
 
 .page-header__button {
   margin-right: 10px;
+}
+
+@media (max-width: 1020px) {
+  .page-header__wrapper {
+    grid-template-columns: 4fr 4fr 4fr;
+    background-position: right center;
+  }
+
+  .page-header__logo {
+    grid-column: 3/4;
+  }
+
+  .page-header__nav {
+    grid-column: 1/2;
+    grid-row: 1/2;
+  }
+
+  .page-header__contacts {
+    grid-column: 2/3;
+    grid-row: 1/2;
+    padding: 0;
+  }
+
+  .page-header__title {
+    font-size: 45px;
+  }
+
+  .page-header__subtitle {
+    width: 430px;
+    font-size: 14px;
+  }
+
+  .page-header__button {
+    min-width: 150px;
+    padding: 15px 15px;
+    font-size: 12px;
+  }
 }
