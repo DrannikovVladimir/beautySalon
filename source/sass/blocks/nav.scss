@@ -19,16 +19,41 @@
 
     background-position: center;
     background-repeat: no-repeat;
-    background-image: url('../img/burger.svg');
+    background-image: url('../img/icon-burger.svg');
+
+    opacity: 0.7;
   }
+
+  cursor: pointer;
 }
 
 @media (max-width: 1020px) {
+  .main-nav {
+    position: relative;
+    justify-self: start;
+
+    &--toggle {
+      .menu {
+        position: absolute;
+        top: 40px;
+        left: 0;
+
+        display: block;
+      }
+
+      .main-nav__button {
+        &::before {
+          background-image: url('../img/icon-close.svg');
+        }
+      }
+    }
+  }
+
   .main-nav__button {
     display: block;
   }
 
   .main-nav__list {
-    // display: none;
+    display: none;
   }
 }

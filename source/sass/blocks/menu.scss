@@ -12,17 +12,24 @@
 .menu__item {
   margin-right: 30px;
 
+  a {
+    display: block;
+
+    &:hover {
+      color: $accent-color;
+    }
+
+    &:active {
+      opacity: 0.4;
+    }
+  }
+
   &:last-child {
     margin-right: 0;
   }
 }
 
 @media (max-width: 1020px) {
-  .menu {
-    position: absolute;
-    display: block;
-  }
-
   .menu__item {
     padding: 5px;
     margin-right: 0;
