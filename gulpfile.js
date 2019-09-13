@@ -1,22 +1,20 @@
 'use strict';
 
-var gulp = require('gulp');
-var browserSync = require('browser-sync').create();
-var sass = require('gulp-sass');
-var postcss = require('gulp-postcss');
-var autoprefixer = require('autoprefixer');
+const gulp = require('gulp');
+const browserSync = require('browser-sync').create();
+const sass = require('gulp-sass');
+const postcss = require('gulp-postcss');
+const autoprefixer = require('autoprefixer');
 
-gulp.task('sass', function () {
-  return gulp.src('source/sass/style.scss')
-    .pipe(sass())
-    .pipe(postcss([
-      autoprefixer()
-    ]))
-    .pipe(gulp.dest('source/css'))
-    .pipe(browserSync.stream());
-});
+gulp.task('sass', () => gulp.src('source/sass/style.scss')
+  .pipe(sass())
+  .pipe(postcss([
+    autoprefixer()
+  ]))
+  .pipe(gulp.dest('source/css'))
+  .pipe(browserSync.stream()));
 
-gulp.task('server', function () {
+gulp.task('server', () => {
   browserSync.init({
     server: 'source'
   });
