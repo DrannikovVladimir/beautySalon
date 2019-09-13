@@ -1,5 +1,6 @@
 .page-header {
   min-height: 150px;
+  margin-bottom: 100px;
 }
 
 .page-header__wrapper {
@@ -7,11 +8,9 @@
   grid-template-columns: 2fr 7fr 3fr;
   grid-template-rows: 70px auto auto auto;
   align-items: center;
-  width: auto;
-  margin: 0 auto;
   padding: 0 100px 180px;
 
-  background-image: url('../img/header-bg-desktop.jpg');
+  background-image: url('../img/header-bg-desktop.png');
   background-repeat: no-repeat;
   background-position: right bottom;
   background-size: 500px auto;
@@ -200,6 +199,10 @@
 }
 
 @media (max-width: 450px) {
+  .page-header {
+    margin-bottom: 40px;
+  }
+
   .page-header__logo {
     display: none;
   }

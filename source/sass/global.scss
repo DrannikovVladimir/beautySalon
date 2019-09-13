@@ -52,6 +52,8 @@ body {
   padding: 0;
 
   @include Montserrat_regular();
+
+  background-color: $bg-color;
 }
 
 img {
