@@ -1,11 +1,15 @@
 'use strict';
 
-(function () {
-  const menu = document.querySelector('.main-nav');
-  const toggle = document.querySelector('.main-nav__button');
+const mainNav = document.querySelector('.main-nav');
+const menu = mainNav.querySelector('.menu');
+const buttonMenu = mainNav.querySelector('.page-header__button');
 
-  toggle.addEventListener('click', evt => {
-    evt.preventDefault();
-    menu.classList.toggle('main-nav--toggle');
-  });
-})();
+buttonMenu.addEventListener('click', (evt) => {
+  if (mainNav.classList.contains('main-nav--close')) {
+    mainNav.classList.remove('main-nav--close');
+    mainNav.classList.add('main-nav--open');
+  } else {
+    mainNav.classList.remove('main-nav--open');
+    mainNav.classList.add('main-nav--close');
+  }
+});

@@ -1,0 +1,26 @@
+@media (max-width: 960px) {
+  .main-nav--open {
+    .menu {
+      position: absolute;
+      top: 70px;
+      left: 0;
+
+      display: flex;
+    }
+
+    .page-header__button {
+      background-image: url('../img/icon-close.svg');
+      background-size: 20px;
+    }
+  }
+
+  .main-nav--close {
+    .menu {
+      display: none;
+    }
+
+    .page-header__button {
+      background-image: url('../img/icon-burger.svg');
+    }
+  }
+}

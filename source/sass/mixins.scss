@@ -18,10 +18,3 @@
   font-size: $font-size;
   line-height: $line-height;
 }
-
-@mixin Andantino ($font-size:36px, $line-height:38px) {
-  font-family: 'Andantino script', 'Papyrus', 'Script', 'Palantino', serif;
-  font-weight: 400;
-  font-size: $font-size;
-  line-height: $line-height;
-}

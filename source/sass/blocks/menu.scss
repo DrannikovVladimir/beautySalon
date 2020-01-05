@@ -12,26 +12,43 @@
 .menu__item {
   margin-right: 30px;
 
-  a {
-    display: block;
-
-    &:hover {
-      color: $accent-color;
-    }
-
-    &:active {
-      opacity: 0.4;
-    }
-  }
-
   &:last-child {
     margin-right: 0;
   }
 }
 
-@media (max-width: 1020px) {
+.menu__link {
+  &:hover {
+    color: $accent-color;
+  }
+
+  &:active {
+    color: darken($accent-color, 10%);
+  }
+}
+
+@media (max-width: 1200px) {
+  .menu {
+    width: 400px;
+  }
+
   .menu__item {
-    padding: 5px;
+    margin-right: 20px;
+
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 960px) {
+  .menu {
+    flex-direction: column;
+    align-items: flex-start;
+    width: auto;
+  }
+
+  .menu__item {
     margin-right: 0;
+    margin-bottom: 10px;
+    order: 1;
   }
 }
