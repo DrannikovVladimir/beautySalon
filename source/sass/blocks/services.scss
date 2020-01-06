@@ -1,0 +1,44 @@
+.services {
+  margin-bottom: 120px;
+}
+
+.services__title {
+  margin: 0;
+  margin-bottom: 20px;
+
+  @include Cormorant_bold();
+  text-align: center;
+}
+
+.services__subtitle {
+  margin: 0;
+  margin-bottom: 50px;
+
+  text-align: center;
+}
+
+@media (max-width: 1200px) {
+  .services {
+    margin-bottom: 80px;
+  }
+}
+
+@media (max-width: 960px) {
+  .services {
+    margin-bottom: 40px;
+  }
+}
+
+@media (max-width: 550px) {
+  .services__title {
+    font-size: 28px;
+    line-height: 36px;
+  }
+
+  .services__subtitle {
+    margin-bottom: 20px;
+
+    font-size: 14px;
+    line-height: 20px;
+  }
+}

@@ -1,0 +1,99 @@
+.service {
+  width: 500px;
+  margin-bottom: 40px;
+  padding: 40px;
+  padding-top: 360px;
+
+  background-color: #FFFFFF;
+  background-repeat: no-repeat;
+  background-position: center top;
+  background-size: 500px auto;
+
+  &--hear {
+    background-image: url('../img/hear.jpg');
+  }
+
+  &--nail {
+    background-image: url('../img/nail.jpg');
+  }
+
+  &--spa {
+    background-image: url('../img/spa.jpg');
+  }
+
+  &--makeup {
+    background-image: url('../img/makeup.jpg');
+  }
+
+  &:hover {
+    background-color: darken(#FFFFFF, 5%);
+
+    .service__link {
+      color: $accent-color;
+    }
+
+    .service__title {
+      border-color: darken(#FFFFFF, 5%);
+    }
+  }
+}
+
+.service__link {
+  display: inline-block;
+
+  &:hover {
+    .service__title {
+      border-color: $accent-color;
+    }
+  }
+}
+
+.service__title {
+  margin: 0;
+  margin-bottom: 20px;
+  border-bottom: 2px solid #FFFFFF;
+
+  font-size: 24px;
+  line-height: 28px;
+  font-weight: 600;
+}
+
+.service__description {
+  margin: 0;
+
+  font-size: 14px;
+  line-height: 20px;
+  opacity: 0.4;
+}
+
+@media (max-width: 1200px) {
+  .service {
+    width: 400px;
+    padding: 300px 20px 30px 30px;
+
+    background-size: 400px auto;
+  }
+}
+
+@media (max-width: 960px) {
+  .service {
+    width: auto;
+    padding-top: 360px;
+
+    background-size: contain;
+  }
+}
+
+@media (max-width: 550px) {
+  .service {
+    padding: 20px;
+    padding-top: 70%;
+  }
+
+  .service__title {
+    margin-bottom: 10px;
+
+    font-size: 18px;
+    line-height: 26px;
+  }
+}
