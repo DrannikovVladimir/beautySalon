@@ -1,0 +1,44 @@
+.gallery {
+  margin-bottom: 120px;
+}
+
+.gallery__title {
+  margin: 0;
+  margin-bottom: 10px;
+
+  @include Cormorant_bold();
+  text-align: center;
+}
+
+.gallery__subtitle {
+  margin: 0;
+  margin-bottom: 40px;
+
+  text-align: center;
+}
+
+@media (max-width: 1200px) {
+  .gallery {
+    margin-bottom: 80px;
+  }
+}
+
+@media (max-width: 960px) {
+  .gallery {
+    margin-bottom: 40px;
+  }
+}
+
+@media (max-width: 550px) {
+  .gallery__title {
+    font-size: 28px;
+    line-height: 36px;
+  }
+
+  .gallery__subtitle {
+    margin-bottom: 20px;
+
+    font-size: 14px;
+    line-height: 20px;
+  }
+}
