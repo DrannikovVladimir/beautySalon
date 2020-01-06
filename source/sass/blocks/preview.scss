@@ -1,5 +1,5 @@
 .preview {
-
+  margin-bottom: 120px;
 }
 
 .preview__wrapper {
@@ -26,6 +26,10 @@
 }
 
 @media (max-width: 1200px) {
+  .preview {
+    margin-bottom: 80px;
+  }
+
   .preview__wrapper {
     padding-top: 110px;
     padding-bottom: 130px;
@@ -47,11 +51,14 @@
 
 @media (max-width: 960px) {
   .preview {
+    margin-bottom: 60px;
+
     text-align: center;
   }
 
   .preview__wrapper {
     padding-top: 340px;
+    padding-bottom: 0;
 
     background-position: top center;
     background-size: 300px auto;
@@ -64,8 +71,8 @@
 }
 
 @media (max-width: 550px) {
-  .preview__wrapper {
-    padding-bottom: 60px;
+  .preview {
+    margin-bottom: 40px;
   }
 
   .preview__title {

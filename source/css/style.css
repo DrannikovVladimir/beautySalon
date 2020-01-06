@@ -526,6 +526,9 @@ input[type="radio"].visually-hidden {
     -webkit-box-ordinal-group: 2;
             order: 1; } }
 
+.preview {
+  margin-bottom: 120px; }
+
 .preview__wrapper {
   padding-top: 130px;
   padding-bottom: 150px;
@@ -548,6 +551,8 @@ input[type="radio"].visually-hidden {
   margin-bottom: 40px; }
 
 @media (max-width: 1200px) {
+  .preview {
+    margin-bottom: 80px; }
   .preview__wrapper {
     padding-top: 110px;
     padding-bottom: 130px;
@@ -561,9 +566,11 @@ input[type="radio"].visually-hidden {
 
 @media (max-width: 960px) {
   .preview {
+    margin-bottom: 60px;
     text-align: center; }
   .preview__wrapper {
     padding-top: 340px;
+    padding-bottom: 0;
     background-position: top center;
     background-size: 300px auto; }
   .preview__subtitle {
@@ -571,8 +578,8 @@ input[type="radio"].visually-hidden {
     margin-bottom: 40px; } }
 
 @media (max-width: 550px) {
-  .preview__wrapper {
-    padding-bottom: 60px; }
+  .preview {
+    margin-bottom: 40px; }
   .preview__title {
     margin-bottom: 20px;
     font-size: 28px;
@@ -621,3 +628,55 @@ input[type="radio"].visually-hidden {
     margin: 0; }
     .button--more {
       margin-top: 20px; } }
+
+.about {
+  padding: 40px 0; }
+
+.about__wrapper {
+  display: -webkit-box;
+  display: flex;
+  background-color: #FFFFFF;
+  background-image: url("../img/about.jpg");
+  background-repeat: no-repeat;
+  background-position: left top;
+  background-size: 530px auto; }
+
+.about__text-wrapper {
+  width: 500px;
+  margin-left: auto;
+  padding: 40px; }
+
+.about__title {
+  margin: 0;
+  margin-bottom: 25px;
+  font-family: 'Cormorant Infant', 'Palatino', serif;
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 62px; }
+
+.about__description {
+  margin: 0;
+  margin-bottom: 20px; }
+
+@media (max-width: 1200px) {
+  .about__wrapper {
+    background-size: 400px; }
+  .about__text-wrapper {
+    width: 440px;
+    padding: 30px 40px; }
+  .about__title {
+    margin-bottom: 10px;
+    font-size: 42px;
+    line-height: 48px; }
+  .about__description {
+    font-size: 14px; }
+    .about__description span {
+      display: none; } }
+
+@media (max-width: 960px) {
+  .about__wrapper {
+    background-size: cover; }
+  .about__text-wrapper {
+    width: auto;
+    background-color: #FFFFFF;
+    opacity: 0.8; } }
