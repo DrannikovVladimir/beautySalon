@@ -1,0 +1,49 @@
+.button {
+  display: inline-block;
+  min-width: 170px;
+  padding: 18px 25px 17px 25px;
+  border: 1px solid $accent-color;
+  border-radius: 3px;
+
+  @include Montserrat_regular(14px, 18px);
+  text-align: center;
+
+  &--checkin {
+    color: #FFFFFF;
+    background-color: $accent-color;
+
+    &:hover {
+      background-color: darken($accent-color, 5%);
+    }
+
+    &:active {
+      background-color: darken($accent-color, 10%);
+    }
+  }
+
+  &--more {
+    margin-left: 20px;
+
+    color: $accent-color;
+    background-color: transparent;
+
+    &:hover {
+      color: #FFFFFF;
+      background-color: $accent-color;
+    }
+
+    &:active {
+      background-color: darken($accent-color, 10%);
+    }
+  }
+}
+
+@media (max-width: 550px) {
+  .button {
+    margin: 0;
+
+    &--more {
+      margin-top: 20px;
+    }
+  }
+}

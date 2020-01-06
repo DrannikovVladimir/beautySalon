@@ -407,6 +407,8 @@ input[type="radio"].visually-hidden {
 .page-header__logo {
   position: relative;
   top: 5px; }
+  .page-header__logo img {
+    width: 100px; }
 
 .page-header__contacts {
   display: -webkit-box;
@@ -523,3 +525,99 @@ input[type="radio"].visually-hidden {
     margin-bottom: 10px;
     -webkit-box-ordinal-group: 2;
             order: 1; } }
+
+.preview__wrapper {
+  padding-top: 130px;
+  padding-bottom: 150px;
+  background-image: url("../img/preview.png");
+  background-repeat: no-repeat;
+  background-position: right center;
+  background-size: 479px auto; }
+
+.preview__title {
+  margin: 0;
+  margin-bottom: 30px;
+  font-family: 'Cormorant Infant', 'Palatino', serif;
+  font-weight: 700;
+  font-size: 54px;
+  line-height: 72px; }
+
+.preview__subtitle {
+  width: 510px;
+  margin: 0;
+  margin-bottom: 40px; }
+
+@media (max-width: 1200px) {
+  .preview__wrapper {
+    padding-top: 110px;
+    padding-bottom: 130px;
+    background-size: 440px auto; }
+  .preview__title {
+    font-size: 44px;
+    line-height: 58px; }
+  .preview__subtitle {
+    width: 380px;
+    font-size: 14px; } }
+
+@media (max-width: 960px) {
+  .preview {
+    text-align: center; }
+  .preview__wrapper {
+    padding-top: 340px;
+    background-position: top center;
+    background-size: 300px auto; }
+  .preview__subtitle {
+    margin: 0 auto;
+    margin-bottom: 40px; } }
+
+@media (max-width: 550px) {
+  .preview__wrapper {
+    padding-bottom: 60px; }
+  .preview__title {
+    margin-bottom: 20px;
+    font-size: 28px;
+    line-height: 40px; }
+  .preview__subtitle {
+    width: auto;
+    max-width: 420px;
+    margin-bottom: 30px; }
+  .preview__buttons-wrapper {
+    display: -webkit-box;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+            flex-direction: column; } }
+
+.button {
+  display: inline-block;
+  min-width: 170px;
+  padding: 18px 25px 17px 25px;
+  border: 1px solid #e71889;
+  border-radius: 3px;
+  font-family: 'Montserrat', 'Tahoma', sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
+  text-align: center; }
+  .button--checkin {
+    color: #FFFFFF;
+    background-color: #e71889; }
+    .button--checkin:hover {
+      background-color: #d0167b; }
+    .button--checkin:active {
+      background-color: #b9136e; }
+  .button--more {
+    margin-left: 20px;
+    color: #e71889;
+    background-color: transparent; }
+    .button--more:hover {
+      color: #FFFFFF;
+      background-color: #e71889; }
+    .button--more:active {
+      background-color: #b9136e; }
+
+@media (max-width: 550px) {
+  .button {
+    margin: 0; }
+    .button--more {
+      margin-top: 20px; } }

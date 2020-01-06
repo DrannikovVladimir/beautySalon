@@ -11,6 +11,10 @@
 .page-header__logo {
   position: relative;
   top: 5px;
+
+  img {
+    width: 100px;
+  }
 }
 
 .page-header__contacts {
