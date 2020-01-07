@@ -885,3 +885,125 @@ input[type="radio"].visually-hidden {
     margin-bottom: 20px; }
   .gallery-list__image {
     width: 600px; } }
+
+.team {
+  position: relative;
+  margin-bottom: 120px; }
+
+.team__title {
+  margin: 0;
+  margin-bottom: 10px;
+  font-family: 'Cormorant Infant', 'Palatino', serif;
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 62px;
+  text-align: center; }
+
+.team__subtitle {
+  width: 715px;
+  margin: 0 auto;
+  margin-bottom: 40px;
+  text-align: center; }
+
+.team__wrapper {
+  width: 1120px;
+  margin: 0 auto;
+  padding: 0 80px; }
+
+@media (max-width: 1199px) {
+  .team {
+    margin-bottom: 80px; }
+  .team__wrapper {
+    width: 820px;
+    padding: 0 60px; } }
+
+@media (max-width: 959px) {
+  .team {
+    margin-bottom: 40px; }
+  .team__wrapper {
+    width: 550px;
+    padding: 0 40px; }
+  .team__subtitle {
+    width: auto;
+    max-width: 715px; } }
+
+@media (max-width: 549px) {
+  .team__wrapper {
+    width: 320px; }
+  .team__title {
+    font-size: 28px;
+    line-height: 36px; }
+  .team__subtitle {
+    margin-bottom: 20px;
+    font-size: 14px;
+    line-height: 20px; } }
+
+.team-list {
+  margin: 0;
+  padding: 0;
+  list-style: none; }
+
+.team-list__item {
+  text-align: center; }
+
+.team-list__image {
+  vertical-align: middle; }
+
+.team-list__content-wrapper {
+  width: 200px;
+  margin: 0 auto;
+  padding: 20px 10px;
+  background-color: #FFFFFF; }
+
+.team-list__title {
+  margin: 0;
+  font-family: 'Montserrat', 'Tahoma', sans-serif;
+  font-weight: 600;
+  font-size: 17px;
+  line-height: 28px; }
+
+.team-list__subtitle {
+  margin: 0;
+  margin-bottom: 20px;
+  font-size: 14px;
+  line-height: 20px; }
+
+.social-list {
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-pack: justify;
+          justify-content: space-between;
+  width: 98px;
+  margin: 0 auto;
+  padding: 0;
+  list-style: none; }
+
+.social-list__icon {
+  opacity: 0.2; }
+  .social-list__icon:hover {
+    fill: #e71889;
+    opacity: 1; }
+  .social-list__icon:active {
+    opacity: 0.5; }
+
+.arrow {
+  position: absolute;
+  top: 40%;
+  margin: 0;
+  padding: 0;
+  border: none;
+  background-color: transparent;
+  background-image: none;
+  opacity: 0.2;
+  z-index: 1000; }
+  .arrow::after {
+    content: ''; }
+  .arrow--prev {
+    left: 10px; }
+  .arrow--next {
+    right: 10px; }
+  .arrow:hover {
+    opacity: 1; }
+
+.arrow__icon {
+  fill: #e71889; }

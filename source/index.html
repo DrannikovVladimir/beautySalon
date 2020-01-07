@@ -5,9 +5,48 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Салон красоты и SPA</title>
+  <link rel="stylesheet" href="css/swiper.css">
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
+  <svg style="display: none">
+    <symbol id="vk" viewBox="0 0 97.75 97.75">
+      <path d="M48.875,0C21.883,0,0,21.882,0,48.875S21.883,97.75,48.875,97.75S97.75,75.868,97.75,48.875S75.867,0,48.875,0z
+         M73.667,54.161c2.278,2.225,4.688,4.319,6.733,6.774c0.906,1.086,1.76,2.209,2.41,3.472c0.928,1.801,0.09,3.776-1.522,3.883
+        l-10.013-0.002c-2.586,0.214-4.644-0.829-6.379-2.597c-1.385-1.409-2.67-2.914-4.004-4.371c-0.545-0.598-1.119-1.161-1.803-1.604
+        c-1.365-0.888-2.551-0.616-3.333,0.81c-0.797,1.451-0.979,3.059-1.055,4.674c-0.109,2.361-0.821,2.978-3.19,3.089
+        c-5.062,0.237-9.865-0.531-14.329-3.083c-3.938-2.251-6.986-5.428-9.642-9.025c-5.172-7.012-9.133-14.708-12.692-22.625
+        c-0.801-1.783-0.215-2.737,1.752-2.774c3.268-0.063,6.536-0.055,9.804-0.003c1.33,0.021,2.21,0.782,2.721,2.037
+        c1.766,4.345,3.931,8.479,6.644,12.313c0.723,1.021,1.461,2.039,2.512,2.76c1.16,0.796,2.044,0.533,2.591-0.762
+        c0.35-0.823,0.501-1.703,0.577-2.585c0.26-3.021,0.291-6.041-0.159-9.05c-0.28-1.883-1.339-3.099-3.216-3.455
+        c-0.956-0.181-0.816-0.535-0.351-1.081c0.807-0.944,1.563-1.528,3.074-1.528l11.313-0.002c1.783,0.35,2.183,1.15,2.425,2.946
+        l0.01,12.572c-0.021,0.695,0.349,2.755,1.597,3.21c1,0.33,1.66-0.472,2.258-1.105c2.713-2.879,4.646-6.277,6.377-9.794
+        c0.764-1.551,1.423-3.156,2.063-4.764c0.476-1.189,1.216-1.774,2.558-1.754l10.894,0.013c0.321,0,0.647,0.003,0.965,0.058
+        c1.836,0.314,2.339,1.104,1.771,2.895c-0.894,2.814-2.631,5.158-4.329,7.508c-1.82,2.516-3.761,4.944-5.563,7.471
+        C71.48,50.992,71.611,52.155,73.667,54.161z"/>
+    </symbol>
+
+    <symbol id="facebook" viewBox="0 0 97.75 97.75">
+      <path d="M48.875,0C21.882,0,0,21.882,0,48.875S21.882,97.75,48.875,97.75S97.75,75.868,97.75,48.875S75.868,0,48.875,0z
+         M67.521,24.89l-6.76,0.003c-5.301,0-6.326,2.519-6.326,6.215v8.15h12.641L67.07,52.023H54.436v32.758H41.251V52.023H30.229V39.258
+        h11.022v-9.414c0-10.925,6.675-16.875,16.42-16.875l9.851,0.015V24.89L67.521,24.89z"/>
+    </symbol>
+
+    <symbol id="instagram" viewBox="0 0 512 512">
+      <path d="m305 256c0 27.0625-21.9375 49-49 49s-49-21.9375-49-49 21.9375-49 49-49 49 21.9375 49 49zm0 0"/>
+      <path d="m370.59375 169.304688c-2.355469-6.382813-6.113281-12.160157-10.996094-16.902344-4.742187-4.882813-10.515625-8.640625-16.902344-10.996094-5.179687-2.011719-12.960937-4.40625-27.292968-5.058594-15.503906-.707031-20.152344-.859375-59.402344-.859375-39.253906 0-43.902344.148438-59.402344.855469-14.332031.65625-22.117187 3.050781-27.292968 5.0625-6.386719 2.355469-12.164063 6.113281-16.902344 10.996094-4.882813 4.742187-8.640625 10.515625-11 16.902344-2.011719 5.179687-4.40625 12.964843-5.058594 27.296874-.707031 15.5-.859375 20.148438-.859375 59.402344 0 39.25.152344 43.898438.859375 59.402344.652344 14.332031 3.046875 22.113281 5.058594 27.292969 2.359375 6.386719 6.113281 12.160156 10.996094 16.902343 4.742187 4.882813 10.515624 8.640626 16.902343 10.996094 5.179688 2.015625 12.964844 4.410156 27.296875 5.0625 15.5.707032 20.144532.855469 59.398438.855469 39.257812 0 43.90625-.148437 59.402344-.855469 14.332031-.652344 22.117187-3.046875 27.296874-5.0625 12.820313-4.945312 22.953126-15.078125 27.898438-27.898437 2.011719-5.179688 4.40625-12.960938 5.0625-27.292969.707031-15.503906.855469-20.152344.855469-59.402344 0-39.253906-.148438-43.902344-.855469-59.402344-.652344-14.332031-3.046875-22.117187-5.0625-27.296874zm-114.59375 162.179687c-41.691406 0-75.488281-33.792969-75.488281-75.484375s33.796875-75.484375 75.488281-75.484375c41.6875 0 75.484375 33.792969 75.484375 75.484375s-33.796875 75.484375-75.484375 75.484375zm78.46875-136.3125c-9.742188 0-17.640625-7.898437-17.640625-17.640625s7.898437-17.640625 17.640625-17.640625 17.640625 7.898437 17.640625 17.640625c-.003906 9.742188-7.898437 17.640625-17.640625 17.640625zm0 0"/>
+      <path d="m256 0c-141.363281 0-256 114.636719-256 256s114.636719 256 256 256 256-114.636719 256-256-114.636719-256-256-256zm146.113281 316.605469c-.710937 15.648437-3.199219 26.332031-6.832031 35.683593-7.636719 19.746094-23.246094 35.355469-42.992188 42.992188-9.347656 3.632812-20.035156 6.117188-35.679687 6.832031-15.675781.714844-20.683594.886719-60.605469.886719-39.925781 0-44.929687-.171875-60.609375-.886719-15.644531-.714843-26.332031-3.199219-35.679687-6.832031-9.8125-3.691406-18.695313-9.476562-26.039063-16.957031-7.476562-7.339844-13.261719-16.226563-16.953125-26.035157-3.632812-9.347656-6.121094-20.035156-6.832031-35.679687-.722656-15.679687-.890625-20.6875-.890625-60.609375s.167969-44.929688.886719-60.605469c.710937-15.648437 3.195312-26.332031 6.828125-35.683593 3.691406-9.808594 9.480468-18.695313 16.960937-26.035157 7.339844-7.480469 16.226563-13.265625 26.035157-16.957031 9.351562-3.632812 20.035156-6.117188 35.683593-6.832031 15.675781-.714844 20.683594-.886719 60.605469-.886719s44.929688.171875 60.605469.890625c15.648437.710937 26.332031 3.195313 35.683593 6.824219 9.808594 3.691406 18.695313 9.480468 26.039063 16.960937 7.476563 7.34375 13.265625 16.226563 16.953125 26.035157 3.636719 9.351562 6.121094 20.035156 6.835938 35.683593.714843 15.675781.882812 20.683594.882812 60.605469s-.167969 44.929688-.886719 60.605469zm0 0"/>
+    </symbol>
+
+    <symbol id="arrow-prev" viewBox="0 0 20 36">
+      <path d="M0.719,19.773 L15.799,35.253 C16.759,36.237 18.314,36.237 19.273,35.253 C20.232,34.269 20.232,32.673 19.273,31.688 L5.929,17.992 L19.272,4.296 C20.231,3.311 20.231,1.715 19.272,0.731 C18.313,-0.253 16.758,-0.253 15.799,0.731 L0.718,16.209 C0.239,16.702 -0.001,17.346 -0.001,17.992 C-0.001,18.637 0.240,19.282 0.719,19.773 Z"/>
+    </symbol>
+
+    <symbol id="arrow-next" viewBox="0 0 20 36">
+      <path d="M19.280,19.774 L4.185,35.253 C3.225,36.237 1.668,36.237 0.709,35.253 C-0.251,34.268 -0.251,32.672 0.709,31.688 L14.065,17.991 L0.709,4.296 C-0.251,3.311 -0.251,1.715 0.709,0.731 C1.669,-0.254 3.225,-0.254 4.186,0.731 L19.281,16.210 C19.761,16.702 20.000,17.347 20.000,17.991 C20.000,18.637 19.760,19.282 19.280,19.774 Z"/>
+    </symbol>
+  </svg>
+
   <header class="page-header">
     <div class="container">
       <div class="page-header__wrapper">
@@ -147,8 +186,201 @@
         </ul>
       </div>
     </section>
+
+    <section class="team">
+      <div class="container">
+        <h2 class="team__title">Наша команда</h2>
+        <p class="team__subtitle">Мы строго следим за качеством наших услуг и удовлетворенностью наших клиентов
+        поэтому мастера - главный актив в нашем салоне красоты.</p>
+      </div>
+      <div class="team__wrapper swiper-container">
+        <ul class="team__list team-list swiper-wrapper">
+          <li class="team-list__item swiper-slide">
+            <div class="team-list__image-wrapper">
+              <img class="team-list__image" src="img/team1.jpg" alt="Парикмахер-стилист" width="220">
+            </div>
+            <div class="team-list__content-wrapper">
+              <h3 class="team-list__title">Марина Сафронова</h3>
+              <p class="team-list__subtitle">Парикмахер-стилист</p>
+              <ul class="team-list__social social-list">
+                <li class="social-list__item">
+                  <a href="https://vk.com" class="social-list__link">
+                    <span class="visually-hidden">Вконтакте</span>
+                    <svg class="social-list__icon" width="26" height="26">
+                      <use xlink:href="#vk"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="social-list__item">
+                  <a href="https://facebook.com" class="social-list__link">
+                    <span class="visually-hidden">Фэйсбук</span>
+                    <svg class="social-list__icon" width="26" height="26">
+                      <use xlink:href="#facebook"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="social-list__item">
+                  <a href="https://instagram.com" class="social-list__link">
+                    <span class="visually-hidden">Инстаграм</span>
+                    <svg class="social-list__icon" width="26" height="26">
+                      <use xlink:href="#instagram"></use>
+                    </svg>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </li>
+          <li class="team-list__item swiper-slide">
+            <div class="team-list__image-wrapper">
+              <img class="team-list__image" src="img/team2.jpg" alt="Мастер маникюра" width="220">
+            </div>
+            <div class="team-list__content-wrapper">
+              <h3 class="team-list__title">Вероника Гаак</h3>
+              <p class="team-list__subtitle">Мастер маникюра</p>
+              <ul class="team-list__social social-list">
+                <li class="social-list__item">
+                  <a href="https://vk.com" class="social-list__link">
+                    <span class="visually-hidden">Вконтакте</span>
+                    <svg class="social-list__icon" width="26" height="26">
+                      <use xlink:href="#vk"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="social-list__item">
+                  <a href="https://facebook.com" class="social-list__link">
+                    <span class="visually-hidden">Фэйсбук</span>
+                    <svg class="social-list__icon" width="26" height="26">
+                      <use xlink:href="#facebook"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="social-list__item">
+                  <a href="https://instagram.com" class="social-list__link">
+                    <span class="visually-hidden">Инстаграм</span>
+                    <svg class="social-list__icon" width="26" height="26">
+                      <use xlink:href="#instagram"></use>
+                    </svg>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </li>
+          <li class="team-list__item swiper-slide">
+            <div class="team-list__image-wrapper">
+              <img class="team-list__image" src="img/team3.jpg" alt="Косметолог" width="220">
+            </div>
+            <div class="team-list__content-wrapper">
+              <h3 class="team-list__title">Виктория Вакон</h3>
+              <p class="team-list__subtitle">Косметолог</p>
+              <ul class="team-list__social social-list">
+                <li class="social-list__item">
+                  <a href="https://vk.com" class="social-list__link">
+                    <span class="visually-hidden">Вконтакте</span>
+                    <svg class="social-list__icon" width="26" height="26">
+                      <use xlink:href="#vk"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="social-list__item">
+                  <a href="https://facebook.com" class="social-list__link">
+                    <span class="visually-hidden">Фэйсбук</span>
+                    <svg class="social-list__icon" width="26" height="26">
+                      <use xlink:href="#facebook"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="social-list__item">
+                  <a href="https://instagram.com" class="social-list__link">
+                    <span class="visually-hidden">Инстаграм</span>
+                    <svg class="social-list__icon" width="26" height="26">
+                      <use xlink:href="#instagram"></use>
+                    </svg>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </li>
+          <li class="team-list__item swiper-slide">
+            <div class="team-list__image-wrapper">
+              <img class="team-list__image" src="img/team4.jpg" alt="Визажист" width="220">
+            </div>
+            <div class="team-list__content-wrapper">
+              <h3 class="team-list__title">Анастасия Кашуба</h3>
+              <p class="team-list__subtitle">Визажист</p>
+              <ul class="team-list__social social-list">
+                <li class="social-list__item">
+                  <a href="https://vk.com" class="social-list__link">
+                    <span class="visually-hidden">Вконтакте</span>
+                    <svg class="social-list__icon" width="26" height="26">
+                      <use xlink:href="#vk"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="social-list__item">
+                  <a href="https://facebook.com" class="social-list__link">
+                    <span class="visually-hidden">Фэйсбук</span>
+                    <svg class="social-list__icon" width="26" height="26">
+                      <use xlink:href="#facebook"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="social-list__item">
+                  <a href="https://instagram.com" class="social-list__link">
+                    <span class="visually-hidden">Инстаграм</span>
+                    <svg class="social-list__icon" width="26" height="26">
+                      <use xlink:href="#instagram"></use>
+                    </svg>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </li>
+        </ul>
+
+        <button class="team__button arrow arrow--prev swiper-button-prev">
+          <span class="visually-hidden">Назад</span>
+          <svg class="arrow__icon" width="20" height="36">
+            <use xlink:href="#arrow-prev"></use>
+          </svg>
+        </button>
+        <button class="team__button  arrow arrow--next swiper-button-next">
+          <span class="visually-hidden">Вперёд</span>
+          <svg class="arrow__icon" width="20" height="36">
+            <use xlink:href="#arrow-next"></use>
+          </svg>
+        </button>
+      </div>
+
+    </section>
   </main>
 
   <script src="js/menu.js"></script>
+  <script src="js/swiper.js"></script>
+  <script type="text/javascript">
+    var swiperTeam = new Swiper('.team__wrapper', {
+      init: true,
+      cssMode: true,
+      sliderPerView: 1,
+      spaceBetween: 20,
+      breakpoints: {
+        1200: {
+          slidesPerView: 4,
+          spaceBetween: 20,
+        },
+        960: {
+          slidesPerView: 3,
+          spaceBetween: 20,
+        },
+        550: {
+          slidesPerView: 2,
+          spaceBetween: 20,
+        },
+      },
+      navigation: {
+        nextEl: '.arrow--next',
+        prevEl: '.arrow--prev',
+      }
+    });
+  </script>
 </body>
 </html>

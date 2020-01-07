@@ -1,0 +1,36 @@
+.team-list {
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+}
+
+.team-list__item {
+  text-align: center;
+}
+
+.team-list__image {
+  vertical-align: middle;
+}
+
+.team-list__content-wrapper {
+  width: 200px;
+  margin: 0 auto;
+  padding: 20px 10px;
+
+  background-color: #FFFFFF;
+}
+
+.team-list__title {
+  margin: 0;
+
+  @include Montserrat_semibold(17px, 28px);
+}
+
+.team-list__subtitle {
+  margin: 0;
+  margin-bottom: 20px;
+
+  font-size: 14px;
+  line-height: 20px;
+}

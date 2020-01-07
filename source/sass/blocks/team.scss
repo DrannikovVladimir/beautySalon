@@ -1,0 +1,72 @@
+.team {
+  position: relative;
+
+  margin-bottom: 120px;
+}
+
+.team__title {
+  margin: 0;
+  margin-bottom: 10px;
+
+  @include Cormorant_bold();
+  text-align: center;
+}
+
+.team__subtitle {
+  width: 715px;
+  margin: 0 auto;
+  margin-bottom: 40px;
+
+  text-align: center;
+}
+
+.team__wrapper {
+  width: 1120px;
+  margin: 0 auto;
+  padding: 0 80px;
+}
+
+@media (max-width: 1199px) {
+  .team {
+    margin-bottom: 80px;
+  }
+
+  .team__wrapper {
+    width: 820px;
+    padding: 0 60px;
+  }
+}
+
+@media (max-width: 959px) {
+  .team {
+    margin-bottom: 40px;
+  }
+
+  .team__wrapper {
+    width: 550px;
+    padding: 0 40px;
+  }
+
+  .team__subtitle {
+    width: auto;
+    max-width: 715px;
+  }
+}
+
+@media (max-width: 549px) {
+  .team__wrapper {
+    width: 320px;
+  }
+
+  .team__title {
+    font-size: 28px;
+    line-height: 36px;
+  }
+
+  .team__subtitle {
+    margin-bottom: 20px;
+
+    font-size: 14px;
+    line-height: 20px;
+  }
+}
