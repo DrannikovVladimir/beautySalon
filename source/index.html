@@ -352,6 +352,63 @@
       </div>
 
     </section>
+
+    <section class="feedbacks">
+      <div class="container">
+        <h2 class="feedbacks__title">Отзывы клиентов </h2>
+        <p class="feedbacks__subtitle">Здесь вы можете почитать отзывы других людей о нашем салоне или оставить свой</p>
+      </div>
+      <div class="feedbacks__wrapper swiper-container">
+        <ul class="feedbacks__list feedbacks-list swiper-wrapper">
+          <li class="feedbacks-list__item swiper-slide">
+            <article class="feedback">
+              <p class="feedback__text">Каждый раз когда посещаю эту клинику первое что бросается мне в лицо это приятные девушки на ресепшне, которые всегда улыбчивы и вежливы. Это поднимает настроение
+                 и заряжает... <a href="#" class="feedback__link">читать отзыв</a>
+              </p>
+              <div class="feedback__image-wrapper">
+                <img class="feedback__image" src="img/feedback1.png" alt="Маргарита Белова" width="100">
+              </div>
+              <h3 class="feedback__title">Маргарита Белова</h3>
+            </article>
+          </li>
+          <li class="feedbacks-list__item swiper-slide">
+            <article class="feedback">
+              <p class="feedback__text">Спасибо большое Виктории за сложную и большую работу, но на совесть выполненную. Особенно за индивидуальный подход, быстроту и после всего перенесенного волосами
+                 за их качество и...<a href="" class="feedback__link">читать отзыв</a>
+              </p>
+              <div class="feedback__image-wrapper">
+                <img class="feedback__image" src="img/feedback2.png" alt="Елизавета Уварова" width="100">
+              </div>
+              <h3 class="feedback__title">Елизавета Уварова</h3>
+            </article>
+          </li>
+          <li class="feedbacks-list__item swiper-slide">
+            <article class="feedback">
+              <p class="feedback__text">По совету подружки решила обратиться к проверенному трихологу в медицинский центр красоты и здоровья. Инна Павловна меня отлично приняла и рассказала, как можно...
+              <a href="" class="feedback__link">читать отзыв</a>
+              </p>
+              <div class="feedback__image-wrapper">
+                <img class="feedback__image" src="img/feedback3.png" alt="Евгения Медведева" width="100">
+              </div>
+              <h3 class="feedback__title">Евгения Медведева</h3>
+            </article>
+          </li>
+        </ul>
+
+        <button class="arrow arrow--feedbacks arrow--prev swiper-button-prev">
+          <span class="visually-hidden">Назад</span>
+          <svg class="arrow__icon" width="20" height="36">
+            <use xlink:href="#arrow-prev"></use>
+          </svg>
+        </button>
+        <button class="arrow arrow--feedbacks arrow--next swiper-button-next">
+          <span class="visually-hidden">Вперёд</span>
+          <svg class="arrow__icon" width="20" height="36">
+            <use xlink:href="#arrow-next"></use>
+          </svg>
+        </button>
+      </div>
+    </section>
   </main>
 
   <script src="js/menu.js"></script>
@@ -379,7 +436,32 @@
       navigation: {
         nextEl: '.arrow--next',
         prevEl: '.arrow--prev',
-      }
+      },
+      keyboard: true,
+      mousewheel: true,
+    });
+
+    var swiperFeedback = new Swiper('.feedbacks__wrapper', {
+      init: true,
+      cssMode: true,
+      sliderPerView: 1,
+      spaceBetween: 20,
+      breakpoints: {
+        1200: {
+          slidesPerView: 3,
+          spaceBetween: 20,
+        },
+        960: {
+          slidesPerView: 2,
+          spaceBetween: 20,
+        },
+      },
+      navigation: {
+        nextEl: '.arrow--next',
+        prevEl: '.arrow--prev',
+      },
+      keyboard: true,
+      mousewheel: true,
     });
   </script>
 </body>

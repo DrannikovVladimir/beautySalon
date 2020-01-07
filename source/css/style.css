@@ -1007,3 +1007,116 @@ input[type="radio"].visually-hidden {
 
 .arrow__icon {
   fill: #e71889; }
+
+@media (max-width: 549px) {
+  .arrow--feedbacks {
+    display: none; } }
+
+.feedbacks {
+  margin-bottom: 120px; }
+
+.feedbacks__wrapper {
+  width: 1210px;
+  margin: 0 auto;
+  padding: 0 80px; }
+
+.feedbacks__title {
+  margin: 0;
+  margin-bottom: 10px;
+  font-family: 'Cormorant Infant', 'Palatino', serif;
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 62px;
+  text-align: center; }
+
+.feedbacks__subtitle {
+  margin: 0;
+  margin-bottom: 40px;
+  text-align: center; }
+
+@media (max-width: 1199px) {
+  .feedbacks {
+    margin-bottom: 80px; }
+  .feedbacks__wrapper {
+    width: 840px; } }
+
+@media (max-width: 959px) {
+  .feedbacks {
+    margin-bottom: 40px; }
+  .feedbacks__wrapper {
+    width: 490px; } }
+
+@media (max-width: 549px) {
+  .feedbacks__title {
+    font-size: 28px;
+    line-height: 36px; }
+  .feedbacks__subtitle {
+    width: auto;
+    max-width: 360px;
+    margin: 0 auto;
+    margin-bottom: 20px;
+    font-size: 14px;
+    line-height: 20px; }
+  .feedbacks__wrapper {
+    width: auto;
+    padding: 0 20px; } }
+
+.feedback {
+  width: 330px;
+  padding: 70px 30px;
+  box-sizing: border-box;
+  background-image: linear-gradient(to top, transparent 170px, white 170px, white 100%); }
+
+.feedback__text {
+  position: relative;
+  margin: 0;
+  margin-bottom: 30px; }
+  .feedback__text::before {
+    content: '';
+    position: absolute;
+    top: -35px;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+            transform: translateX(-50%);
+    width: 23px;
+    height: 19px;
+    background-image: url("../img/quotes.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 23px auto; }
+
+.feedback__link {
+  display: inline-block;
+  border-bottom: 1px dashed transparent;
+  color: #e71889;
+  line-height: 16px; }
+  .feedback__link:hover {
+    border-bottom: 1px dashed #e71889; }
+  .feedback__link:active {
+    opacity: 0.4; }
+
+.feedback__image-wrapper {
+  margin-bottom: 20px;
+  text-align: center; }
+
+.feedback__image {
+  width: 100px; }
+
+.feedback__title {
+  margin: 0;
+  font-family: 'Montserrat', 'Tahoma', sans-serif;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 24px;
+  text-align: center; }
+
+@media (max-width: 549px) {
+  .feedback {
+    width: auto;
+    padding-left: 20px;
+    padding-right: 20px; } }
+
+.feedbacks-list {
+  margin: 0;
+  padding: 0;
+  list-style: none; }

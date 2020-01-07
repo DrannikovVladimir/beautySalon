@@ -1,0 +1,71 @@
+.feedback {
+  width: 330px;
+  padding: 70px 30px;
+  box-sizing: border-box;
+
+  background-image: linear-gradient(to top, transparent 170px, white 170px, white 100%);
+}
+
+.feedback__text {
+  position: relative;
+
+  margin: 0;
+  margin-bottom: 30px;
+
+  &::before {
+    content: '';
+
+    position: absolute;
+    top: -35px;
+    left: 50%;
+    transform: translateX(-50%);
+
+    width: 23px;
+    height: 19px;
+
+    background-image: url('../img/quotes.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 23px auto;
+  }
+}
+
+.feedback__link {
+  display: inline-block;
+  border-bottom: 1px dashed transparent;
+
+  color: $accent-color;
+  line-height: 16px;
+
+  &:hover {
+    border-bottom: 1px dashed $accent-color;
+  }
+
+  &:active {
+    opacity: 0.4;
+  }
+}
+
+.feedback__image-wrapper {
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.feedback__image {
+  width: 100px;
+}
+
+.feedback__title {
+  margin: 0;
+
+  @include Montserrat_semibold(18px, 24px);
+  text-align: center;
+}
+
+@media (max-width: 549px) {
+  .feedback {
+    width: auto;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}

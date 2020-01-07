@@ -32,3 +32,11 @@
 .arrow__icon {
   fill: $accent-color;
 }
+
+@media (max-width: 549px) {
+  .arrow {
+    &--feedbacks {
+      display: none;
+    }
+  }
+}
