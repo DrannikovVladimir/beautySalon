@@ -1034,6 +1034,15 @@ input[type="radio"].visually-hidden {
   margin-bottom: 40px;
   text-align: center; }
 
+.feedbacks__action {
+  width: auto;
+  max-width: 360px;
+  margin: 0 auto 60px;
+  text-align: center; }
+
+.feedbacks__button-wrapper {
+  text-align: center; }
+
 @media (max-width: 1199px) {
   .feedbacks {
     margin-bottom: 80px; }
