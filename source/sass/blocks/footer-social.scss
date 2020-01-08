@@ -1,0 +1,26 @@
+.footer-social__phone {
+  display: block;
+  margin-bottom: 10px;
+
+  @include Montserrat_semibold(24px, 30px);
+}
+
+.footer-social__text {
+  margin: 0;
+  margin-bottom: 5px;
+
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 600;
+}
+
+
+@media (max-width: 465px) {
+  .footer-social {
+    text-align: center;
+  }
+
+  .footer-social__list {
+    margin: 0 auto;
+  }
+}

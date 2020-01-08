@@ -1,0 +1,31 @@
+.page-footer {
+  padding: 45px 0;
+
+  background-color: #ECECEC;
+}
+
+.page-footer__wrapper {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+@media (max-width: 959px) {
+  .page-footer__wrapper {
+    align-items: flex-start;
+  }
+
+  .page-footer__contacts {
+    margin-top: 20px;
+    order: 1;
+  }
+}
+
+@media (max-width: 465px) {
+  .page-footer__wrapper {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}
