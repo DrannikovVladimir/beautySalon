@@ -8,6 +8,8 @@
   @include Montserrat_regular(14px, 18px);
   text-align: center;
 
+  transition-duration: 0.2s;
+
   &--checkin {
     color: #FFFFFF;
     background-color: $accent-color;

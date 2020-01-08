@@ -498,11 +498,13 @@ input[type="radio"].visually-hidden {
   .menu__item:last-child {
     margin-right: 0; }
 
-.menu__link:hover {
-  color: #e71889; }
-
-.menu__link:active {
-  color: #b9136e; }
+.menu__link {
+  -webkit-transition-duration: 0.2s;
+          transition-duration: 0.2s; }
+  .menu__link:hover {
+    color: #e71889; }
+  .menu__link:active {
+    color: #b9136e; }
 
 @media (max-width: 1200px) {
   .menu {
@@ -604,7 +606,9 @@ input[type="radio"].visually-hidden {
   font-weight: 400;
   font-size: 14px;
   line-height: 18px;
-  text-align: center; }
+  text-align: center;
+  -webkit-transition-duration: 0.2s;
+          transition-duration: 0.2s; }
   .button--checkin {
     color: #FFFFFF;
     background-color: #e71889; }
@@ -739,66 +743,71 @@ input[type="radio"].visually-hidden {
 .service {
   width: 500px;
   margin-bottom: 40px;
-  padding: 40px;
-  padding-top: 360px;
-  background-color: #FFFFFF;
-  background-repeat: no-repeat;
-  background-position: center top;
-  background-size: 500px auto; }
-  .service--hear {
-    background-image: url("../img/hear.jpg"); }
-  .service--nail {
-    background-image: url("../img/nail.jpg"); }
-  .service--spa {
-    background-image: url("../img/spa.jpg"); }
-  .service--makeup {
-    background-image: url("../img/makeup.jpg"); }
-  .service:hover {
-    background-color: #f2f2f2; }
-    .service:hover .service__link {
-      color: #e71889; }
-    .service:hover .service__title {
-      border-color: #f2f2f2; }
+  background-color: #FFFFFF; }
+
+.service__content {
+  padding: 30px 34px; }
 
 .service__link {
-  display: inline-block; }
+  display: block; }
+  .service__link:hover .service__image {
+    -webkit-transform: scale(1.1);
+            transform: scale(1.1); }
   .service__link:hover .service__title {
-    border-color: #e71889; }
+    border-color: #e71889;
+    color: #e71889; }
+
+.service__image-wrapper {
+  width: 500px;
+  height: 325px;
+  overflow: hidden;
+  vertical-align: middle; }
+
+.service__image {
+  width: 100%;
+  -webkit-transition-duration: 0.4s;
+          transition-duration: 0.4s; }
 
 .service__title {
+  display: inline-block;
   margin: 0;
   margin-bottom: 20px;
   border-bottom: 2px solid #FFFFFF;
   font-size: 24px;
   line-height: 28px;
-  font-weight: 600; }
+  font-weight: 600;
+  -webkit-transition-duration: 0.2s;
+          transition-duration: 0.2s; }
 
 .service__description {
   margin: 0;
   font-size: 14px;
   line-height: 20px;
-  opacity: 0.4; }
+  opacity: 0.8; }
 
 @media (max-width: 1200px) {
   .service {
     width: 400px;
-    padding: 300px 20px 30px 30px;
-    background-size: 400px auto; } }
+    background-size: 400px auto; }
+  .service__image-wrapper {
+    width: 400px;
+    height: 260px; } }
 
 @media (max-width: 960px) {
   .service {
     width: auto;
-    padding-top: 360px;
-    background-size: contain; } }
+    background-size: contain; }
+  .service__image-wrapper {
+    width: auto;
+    height: auto; } }
 
 @media (max-width: 550px) {
-  .service {
-    padding: 20px;
-    padding-top: 70%; }
   .service__title {
     margin-bottom: 10px;
     font-size: 18px;
-    line-height: 26px; } }
+    line-height: 26px; }
+  .service__content {
+    padding: 20px; } }
 
 .gallery {
   margin-bottom: 120px; }
@@ -846,27 +855,22 @@ input[type="radio"].visually-hidden {
 
 .gallery-list__item {
   margin-right: 40px;
-  margin-bottom: 40px; }
+  margin-bottom: 40px;
+  overflow: hidden; }
   .gallery-list__item:nth-child(2n) {
     margin-right: 0; }
 
 .gallery-list__link {
   position: relative;
   display: block; }
-  .gallery-list__link:hover::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: #000000;
-    opacity: 0.4; }
+  .gallery-list__link:hover .gallery-list__image {
+    -webkit-transform: scale(1.1);
+            transform: scale(1.1); }
 
 .gallery-list__image {
-  vertical-align: middle; }
+  vertical-align: middle;
+  -webkit-transition-duration: 0.4s;
+          transition-duration: 0.4s; }
 
 @media (max-width: 1200px) {
   .gallery-list__image--1 {
