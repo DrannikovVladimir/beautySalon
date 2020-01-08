@@ -1,0 +1,32 @@
+.features {
+  margin-bottom: 120px;
+}
+
+.features__title {
+  margin: 0;
+  margin-bottom: 60px;
+
+  @include Cormorant_bold();
+  text-align: center;
+}
+
+@media (max-width: 1199px) {
+  .features {
+    margin-bottom: 80px;
+  }
+}
+
+@media (max-width: 959px) {
+  .features {
+    margin-bottom: 40px;
+  }
+}
+
+@media (max-width: 549px) {
+  .features__title {
+    margin-bottom: 20px;
+
+    font-size: 28px;
+    line-height: 36px;
+  }
+}
