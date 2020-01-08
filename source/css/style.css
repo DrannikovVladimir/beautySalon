@@ -607,8 +607,8 @@ input[type="radio"].visually-hidden {
   font-size: 14px;
   line-height: 18px;
   text-align: center;
-  -webkit-transition-duration: 0.2s;
-          transition-duration: 0.2s; }
+  -webkit-transition-duration: 0.1s;
+          transition-duration: 0.1s; }
   .button--checkin {
     color: #FFFFFF;
     background-color: #e71889; }
@@ -948,9 +948,17 @@ input[type="radio"].visually-hidden {
 
 .team-list__item {
   text-align: center; }
+  .team-list__item:hover .team-list__image {
+    -webkit-transform: scale(1.05);
+            transform: scale(1.05); }
 
 .team-list__image {
-  vertical-align: middle; }
+  vertical-align: middle;
+  -webkit-transition: 0.4s;
+  transition: 0.4s; }
+
+.team-list__image-wrapper {
+  overflow: hidden; }
 
 .team-list__content-wrapper {
   width: 200px;
@@ -984,7 +992,9 @@ input[type="radio"].visually-hidden {
     margin: 0; }
 
 .social-list__icon {
-  opacity: 0.2; }
+  opacity: 0.2;
+  -webkit-transition: 0.2s;
+  transition: 0.2s; }
   .social-list__icon:hover {
     fill: #e71889;
     opacity: 1; }
@@ -1081,7 +1091,12 @@ input[type="radio"].visually-hidden {
   width: 330px;
   padding: 70px 30px;
   box-sizing: border-box;
-  background-image: linear-gradient(to top, transparent 170px, white 170px, white 100%); }
+  background-image: linear-gradient(to top, transparent 170px, white 170px, white 100%);
+  -webkit-transition: 0.4s;
+  transition: 0.4s; }
+  .feedback:hover {
+    -webkit-transform: translateY(10px);
+            transform: translateY(10px); }
 
 .feedback__text {
   position: relative;

@@ -15,6 +15,8 @@
 .social-list__icon {
   opacity: 0.2;
 
+  transition: 0.2s;
+
   &:hover {
     fill: $accent-color;
     opacity: 1;

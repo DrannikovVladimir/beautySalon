@@ -7,10 +7,22 @@
 
 .team-list__item {
   text-align: center;
+
+  &:hover {
+    .team-list__image {
+      transform: scale(1.05);
+    }
+  }
 }
 
 .team-list__image {
   vertical-align: middle;
+
+  transition: 0.4s;
+}
+
+.team-list__image-wrapper {
+  overflow: hidden;
 }
 
 .team-list__content-wrapper {
