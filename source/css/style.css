@@ -919,7 +919,7 @@ input[type="radio"].visually-hidden {
 
 @media (max-width: 959px) {
   .team {
-    margin-bottom: 40px; }
+    margin-bottom: 60px; }
   .team__wrapper {
     width: 550px;
     padding: 0 40px; }
@@ -1051,7 +1051,7 @@ input[type="radio"].visually-hidden {
 
 @media (max-width: 959px) {
   .feedbacks {
-    margin-bottom: 40px; }
+    margin-bottom: 60px; }
   .feedbacks__wrapper {
     width: 490px; } }
 
@@ -1068,7 +1068,9 @@ input[type="radio"].visually-hidden {
     line-height: 20px; }
   .feedbacks__wrapper {
     width: auto;
-    padding: 0 20px; } }
+    padding: 0 20px; }
+  .feedbacks__action {
+    margin-bottom: 20px; } }
 
 .feedback {
   width: 330px;
@@ -1122,8 +1124,10 @@ input[type="radio"].visually-hidden {
 @media (max-width: 549px) {
   .feedback {
     width: auto;
+    padding-bottom: 40px;
     padding-left: 20px;
-    padding-right: 20px; } }
+    padding-right: 20px;
+    background-image: linear-gradient(to top, transparent 140px, white 140px, white 100%); } }
 
 .feedbacks-list {
   margin: 0;
