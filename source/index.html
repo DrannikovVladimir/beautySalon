@@ -573,7 +573,31 @@
     </div>
   </footer>
 
+  <section class="modal modal--callback hidden">
+    <div class="modal__wrapper">
+      <div class="modal__content">
+        <h2 class="visually-hidden">Обратный звонок</h2>
+        <p class="modal__description">Заполните форму и мы перезвоним вам в течении 15 минут</p>
+        <button class="modal__button-close" type="button">
+          <span class="visually-hidden">Закрыть</span>
+        </button>
+        <form action="" class="modal__form form-modal">
+          <div class="form-modal__item form-modal__item--user">
+            <input class="form-modal__input" id="userName" type="text" name="user-name" placeholder="Ваше имя">
+            <label for="userName" class="visually-hidden">Ваше имя</label>
+          </div>
+          <div class="form-modal__item form-modal__item--phone">
+            <input class="form-modal__input" id="userPhone" type="text" name="user-phone" placeholder="Номер телефона">
+            <label for="userPhone" class="visually-hidden">Номер телефона</label>
+          </div>
+          <button class="modal__button button button--checkin" type="submit">Заказать звонок</button>
+        </form>
+      </div>
+    </div>
+  </section>
+
   <script src="js/menu.js"></script>
+  <script src="js/modal.js"></script>
   <script src="js/swiper.js"></script>
   <script type="text/javascript">
     var swiperTeam = new Swiper('.team__wrapper', {

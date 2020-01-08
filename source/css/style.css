@@ -1400,3 +1400,106 @@ input[type="radio"].visually-hidden {
     text-align: center; }
   .footer-social__list {
     margin: 0 auto; } }
+
+.modal__wrapper {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+  z-index: 100; }
+
+.modal__content {
+  position: absolute;
+  top: 150px;
+  left: 50%;
+  margin-left: -170px;
+  width: 340px;
+  padding: 30px;
+  background-color: #e0e0e0; }
+
+.modal__description {
+  width: 230px;
+  margin: 0 auto;
+  margin-bottom: 20px;
+  text-align: center; }
+
+.modal__button-close {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 30px;
+  height: 30px;
+  border: none;
+  background-color: transparent;
+  background-image: url("../img/icon-close.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 15px auto; }
+
+.modal__button {
+  width: 100%; }
+
+.hidden {
+  display: none; }
+
+@media (max-width: 550px) {
+  .modal__content {
+    width: auto;
+    margin-left: 0;
+    -webkit-transform: translateX(-50%);
+            transform: translateX(-50%); } }
+
+.form-modal__item {
+  position: relative;
+  margin-bottom: 15px; }
+  .form-modal__item::before {
+    content: '';
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    width: 20px;
+    height: 20px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 18px auto; }
+  .form-modal__item--phone::before {
+    background-image: url("../img/phone.png"); }
+  .form-modal__item--user::before {
+    background-image: url("../img/user.png"); }
+
+.form-modal__input {
+  width: 100%;
+  min-height: 50px;
+  padding: 15px 20px 15px 40px;
+  border: none;
+  border-radius: 3px;
+  font-size: 14px;
+  line-height: 20px; }
+
+::-webkit-input-placeholder {
+  color: #a7a7a7; }
+
+::-moz-placeholder {
+  color: #a7a7a7; }
+
+:-moz-placeholder {
+  color: #a7a7a7; }
+
+:-ms-input-placeholder {
+  color: #a7a7a7; }
+
+:focus::-webkit-input-placeholder {
+  color: transparent; }
+
+:focus::-moz-placeholder {
+  color: transparent; }
+
+:focus:-moz-placeholder {
+  color: transparent; }
+
+:focus:-ms-input-placeholder {
+  color: transparent; }
