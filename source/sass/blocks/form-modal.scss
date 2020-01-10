@@ -24,9 +24,15 @@
     }
   }
 
-  &--user {
+  &--name {
     &::before {
       background-image: url('../img/user.png');
+    }
+  }
+
+  &--date {
+    &::before {
+      background-image: url('../img/calendar.png');
     }
   }
 }
@@ -40,6 +46,11 @@
 
   font-size: 14px;
   line-height: 20px;
+  color: #a7a7a7;
+
+  &:focus {
+    color: $text-color;
+  }
 }
 
 ::-webkit-input-placeholder {color:#a7a7a7;}

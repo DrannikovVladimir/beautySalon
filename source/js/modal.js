@@ -3,27 +3,60 @@
 const modalCallback = document.querySelector('.modal--callback');
 const closeCallback = modalCallback.querySelector('.modal__button-close');
 const buttonCallback = document.querySelector('.page-header__callback');
+const modalCheckin = document.querySelector('.modal--checkin');
+const closeCheckin = modalCheckin.querySelector('.modal__button-close');
+const buttonCheckin = Array.from(document.querySelectorAll('.button--checkin'));
 
-const onEscPress = (evt) => {
+const onEscModalCallbackPress = (evt) => {
   if (evt.keyCode === 27) {
-    modalClose();
+    modalCallbackClose();
   }
 };
 
-const modalOpen = () => {
+const onEscModalCheckinPress = (evt) => {
+  if (evt.keyCode === 27) {
+    modalCheckinClose();
+  }
+};
+
+const modalCallbackOpen = () => {
   modalCallback.classList.remove('hidden');
-  document.addEventListener('keydown', onEscPress);
+  document.addEventListener('keydown', onEscModalCallbackPress);
 };
 
-const modalClose = () => {
+const modalCallbackClose = () => {
   modalCallback.classList.add('hidden');
-  document.removeEventListener('keydown', onEscPress);
+  document.removeEventListener('keydown', onEscModalCallbackPress);
 };
 
-buttonCallback.addEventListener('click', () => {
-  modalOpen();
+const modalCheckinOpen = () => {
+  modalCheckin.classList.remove('hidden');
+  document.addEventListener('keydown', onEscModalCheckinPress);
+};
+
+const modalCheckinClose = () => {
+  modalCheckin.classList.add('hidden');
+  document.removeEventListener('keydown', onEscModalCheckinPress);
+};
+
+buttonCallback.addEventListener('click', (evt) => {
+  evt.preventDefault();
+  modalCallbackOpen();
 });
 
-closeCallback.addEventListener('click', () => {
-  modalClose();
+closeCallback.addEventListener('click', (evt) => {
+  evt.preventDefault();
+  modalCallbackClose();
+});
+
+buttonCheckin.forEach((button) => {
+  button.addEventListener('click', (evt) => {
+    evt.preventDefault();
+    modalCheckinOpen();
+  });
+
+  closeCheckin.addEventListener('click', (evt) => {
+    evt.preventDefault();
+    modalCheckinClose();
+  });
 });

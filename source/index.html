@@ -582,13 +582,40 @@
           <span class="visually-hidden">Закрыть</span>
         </button>
         <form action="" class="modal__form form-modal">
-          <div class="form-modal__item form-modal__item--user">
-            <input class="form-modal__input" id="userName" type="text" name="user-name" placeholder="Ваше имя">
-            <label for="userName" class="visually-hidden">Ваше имя</label>
+          <div class="form-modal__item form-modal__item--name">
+            <input class="form-modal__input" id="callbackName" type="text" name="callback-name" placeholder="Ваше имя">
+            <label for="callbackName" class="visually-hidden">Ваше имя</label>
           </div>
           <div class="form-modal__item form-modal__item--phone">
-            <input class="form-modal__input" id="userPhone" type="text" name="user-phone" placeholder="Номер телефона">
-            <label for="userPhone" class="visually-hidden">Номер телефона</label>
+            <input class="form-modal__input" id="callbackPhone" type="text" name="callback-phone" placeholder="Номер телефона">
+            <label for="callbackPhone" class="visually-hidden">Номер телефона</label>
+          </div>
+          <button class="modal__button button button--checkin" type="submit">Заказать звонок</button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <section class="modal modal--checkin hidden">
+    <div class="modal__wrapper">
+      <div class="modal__content">
+        <h2 class="visually-hidden">Обратный звонок</h2>
+        <p class="modal__description">Заполните форму и мы перезвоним вам в течении 15 минут</p>
+        <button class="modal__button-close" type="button">
+          <span class="visually-hidden">Закрыть</span>
+        </button>
+        <form action="" class="modal__form form-modal">
+          <div class="form-modal__item form-modal__item--name">
+            <input class="form-modal__input" id="checkinName" type="text" name="checkin-name" placeholder="Ваше имя">
+            <label for="checkinName" class="visually-hidden">Ваше имя</label>
+          </div>
+          <div class="form-modal__item form-modal__item--phone">
+            <input class="form-modal__input" id="checkinPhone" type="text" name="checkin-phone" placeholder="Номер телефона">
+            <label for="checkinPhone" class="visually-hidden">Номер телефона</label>
+          </div>
+          <div class="form-modal__item form-modal__item--date">
+            <input class="form-modal__input" id="checkinDate" type="date" name="checkin-date" placeholder="дд.мм.гггг">
+            <label for="checkinDate" class="visually-hidden">Номер телефона</label>
           </div>
           <button class="modal__button button button--checkin" type="submit">Заказать звонок</button>
         </form>

@@ -1439,6 +1439,10 @@ input[type="radio"].visually-hidden {
   background-repeat: no-repeat;
   background-position: center;
   background-size: 15px auto; }
+  .modal__button-close:hover {
+    opacity: 0.7; }
+  .modal__button-close:active {
+    opacity: 0.4; }
 
 .modal__button {
   width: 100%; }
@@ -1468,8 +1472,10 @@ input[type="radio"].visually-hidden {
     background-size: 18px auto; }
   .form-modal__item--phone::before {
     background-image: url("../img/phone.png"); }
-  .form-modal__item--user::before {
+  .form-modal__item--name::before {
     background-image: url("../img/user.png"); }
+  .form-modal__item--date::before {
+    background-image: url("../img/calendar.png"); }
 
 .form-modal__input {
   width: 100%;
@@ -1478,7 +1484,10 @@ input[type="radio"].visually-hidden {
   border: none;
   border-radius: 3px;
   font-size: 14px;
-  line-height: 20px; }
+  line-height: 20px;
+  color: #a7a7a7; }
+  .form-modal__input:focus {
+    color: #2d2d2d; }
 
 ::-webkit-input-placeholder {
   color: #a7a7a7; }
