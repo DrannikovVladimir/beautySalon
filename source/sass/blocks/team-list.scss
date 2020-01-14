@@ -46,3 +46,13 @@
   font-size: 14px;
   line-height: 20px;
 }
+
+@media (max-width: 960px) {
+  .team-list__item {
+    &:hover {
+      .team-list__image {
+        transform: none;
+      }
+    }
+  }
+}

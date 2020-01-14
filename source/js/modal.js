@@ -89,7 +89,9 @@ phoneInput.forEach((phone) => {
     if (phoneValue.length < 10) {
       phone.value = '';
     }
+  });
 
+  phone.addEventListener('invalid', (evt) => {
     if (phone.validity.patternMismatch) {
       phone.setCustomValidity('Номер телефона должен быть в формате +7 ( XXX ) XXX - XX - XX');
     } else {
@@ -99,8 +101,7 @@ phoneInput.forEach((phone) => {
 });
 
 nameInput.forEach((name) => {
-  name.addEventListener('blur', (evt) => {
-    console.log(name);
+  name.addEventListener('invalid', (evt) => {
     if (name.validity.patternMismatch) {
       name.setCustomValidity('Имя может содержать только буквы');
     } else {

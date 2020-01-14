@@ -585,7 +585,7 @@
           method="post">
           <div class="form-modal__item form-modal__item--name">
             <input class="form-modal__input input-name" id="callbackName" type="text" name="callback-name" placeholder="Ваше имя" required
-              pattern="(^[A-Za-z]{1}[a-z]{1,16}$)|(^[А-Яа-я]{1}[а-я]{1,16}$)">
+              pattern="(^[A-Za-z]{1}[a-z]{1,16}$)|(^[А-Яа-я]{1}[а-я]{1,16}$)" minlength="2" maxlength="16">
             <label for="callbackName" class="visually-hidden">Ваше имя</label>
           </div>
           <div class="form-modal__item form-modal__item--phone">
@@ -610,7 +610,7 @@
         <form class="modal__form form-modal" action="POST">
           <div class="form-modal__item form-modal__item--name">
             <input class="form-modal__input input-name" id="checkinName" type="text" name="checkin-name" placeholder="Ваше имя" required
-              pattern="(^[A-Za-z]{1}[a-z]{1,16}$)|(^[А-Яа-я]{1}[а-я]{1,16}$)">
+              pattern="(^[A-Za-z]{1}[a-z]{1,16}$)|(^[А-Яа-я]{1}[а-я]{1,16}$)" minlength="2" maxlength="16">
             <label for="checkinName" class="visually-hidden">Ваше имя</label>
           </div>
           <div class="form-modal__item form-modal__item--phone">

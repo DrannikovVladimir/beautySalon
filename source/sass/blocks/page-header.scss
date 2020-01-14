@@ -28,14 +28,20 @@
 }
 
 .page-header__callback {
+  display: block;
+
   font-size: 12px;
   line-height: 16px;
 
   border-bottom: 1px dashed $text-color;
 
+  transition: transform 0.2s;
+
   &:hover {
     color: $accent-color;
     border-color: $accent-color;
+
+    transform: translateY(1px);
   }
 
   &:active {

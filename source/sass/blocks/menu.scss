@@ -18,10 +18,12 @@
 }
 
 .menu__link {
-  transition-duration: 0.2s;
+  display: block;
+  transition: transform 0.2s;
 
   &:hover {
     color: $accent-color;
+    transform: translateY(1px);
   }
 
   &:active {

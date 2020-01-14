@@ -68,6 +68,14 @@
   text-align: center;
 }
 
+@media (max-width: 959px) {
+  .feedback {
+    &:hover {
+      transform: none;
+    }
+  }
+}
+
 @media (max-width: 549px) {
   .feedback {
     width: auto;
