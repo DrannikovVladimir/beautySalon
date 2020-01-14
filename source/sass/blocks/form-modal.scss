@@ -51,6 +51,10 @@
   &:focus {
     color: $text-color;
   }
+
+  &:valid {
+    background-color: #e4f6d2;
+  }
 }
 
 ::-webkit-input-placeholder {color:#a7a7a7;}

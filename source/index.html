@@ -90,7 +90,7 @@
           <h1 class="preview__title">Салон красоты & SPA</h1>
           <p class="preview__subtitle">Современная аппаратная косметология, новейшие системы по уходу за лицом, косметика класса люкс, топовые мастера.</p>
           <div class="preview__buttons-wrapper">
-            <a href="#" class="preview__button button button--checkin">Записаться</a>
+            <a href="#" class="preview__button button button--checkin checkin">Записаться</a>
             <a href="#" class="preview__button button button--more">Смотреть услуги</a>
           </div>
         </div>
@@ -104,7 +104,7 @@
             <h2 class="about__title">О нас</h2>
             <p class="about__description">Салон «Лия» — это гарантия безопасности, качества, здоровья, комфорта, моды и красоты! Очень хочется, чтобы каждый гость оставался надолго. Поэтому для нас важен результат!</p>
             <p class="about__description">Наш салон распахнул свои двери перед первым посетителем 31 марта 2007 года и на протяжении всего времени мы стараемся удивлять всех вас высоким качеством работ! <span>Хотите кардинально изменить имидж, тогда смело доверьтесь мастерам салона «Лия».</span></p>
-            <a href="#" class="about__button button button--checkin">Записаться</a>
+            <a href="#" class="about__button button button--checkin checkin">Записаться</a>
           </div>
         </div>
       </div>
@@ -581,13 +581,16 @@
         <button class="modal__button-close" type="button">
           <span class="visually-hidden">Закрыть</span>
         </button>
-        <form action="" class="modal__form form-modal">
+        <form class="modal__form form-modal"
+          method="post">
           <div class="form-modal__item form-modal__item--name">
-            <input class="form-modal__input" id="callbackName" type="text" name="callback-name" placeholder="Ваше имя">
+            <input class="form-modal__input input-name" id="callbackName" type="text" name="callback-name" placeholder="Ваше имя" required
+              pattern="(^[A-Za-z]{1}[a-z]{1,16}$)|(^[А-Яа-я]{1}[а-я]{1,16}$)">
             <label for="callbackName" class="visually-hidden">Ваше имя</label>
           </div>
           <div class="form-modal__item form-modal__item--phone">
-            <input class="form-modal__input" id="callbackPhone" type="text" name="callback-phone" placeholder="Номер телефона">
+            <input class="form-modal__input" id="callbackPhone" type="tel" name="callback-phone" placeholder="Номер телефона" required
+              pattern="^\+[0-9]{1} \( [0-9]{3} \) [0-9]{3} [-]{1} [0-9]{2} [-]{1} [0-9]{2}$" maxlength="24">
             <label for="callbackPhone" class="visually-hidden">Номер телефона</label>
           </div>
           <button class="modal__button button button--checkin" type="submit">Заказать звонок</button>
@@ -604,20 +607,22 @@
         <button class="modal__button-close" type="button">
           <span class="visually-hidden">Закрыть</span>
         </button>
-        <form action="" class="modal__form form-modal">
+        <form class="modal__form form-modal" action="POST">
           <div class="form-modal__item form-modal__item--name">
-            <input class="form-modal__input" id="checkinName" type="text" name="checkin-name" placeholder="Ваше имя">
+            <input class="form-modal__input input-name" id="checkinName" type="text" name="checkin-name" placeholder="Ваше имя" required
+              pattern="(^[A-Za-z]{1}[a-z]{1,16}$)|(^[А-Яа-я]{1}[а-я]{1,16}$)">
             <label for="checkinName" class="visually-hidden">Ваше имя</label>
           </div>
           <div class="form-modal__item form-modal__item--phone">
-            <input class="form-modal__input" id="checkinPhone" type="text" name="checkin-phone" placeholder="Номер телефона">
+            <input class="form-modal__input" id="checkinPhone" type="tel" name="checkin-phone" placeholder="Номер телефона" required
+              pattern="^\+[0-9]{1} \( [0-9]{3} \) [0-9]{3} [-]{1} [0-9]{2} [-]{1} [0-9]{2}$" maxlength="24">
             <label for="checkinPhone" class="visually-hidden">Номер телефона</label>
           </div>
           <div class="form-modal__item form-modal__item--date">
-            <input class="form-modal__input" id="checkinDate" type="date" name="checkin-date" placeholder="дд.мм.гггг">
+            <input class="form-modal__input" id="checkinDate" type="date" name="checkin-date" placeholder="дд.мм.гггг" required>
             <label for="checkinDate" class="visually-hidden">Номер телефона</label>
           </div>
-          <button class="modal__button button button--checkin" type="submit">Заказать звонок</button>
+          <button class="modal__button button button--checkin" type="submit">Записаться</button>
         </form>
       </div>
     </div>
