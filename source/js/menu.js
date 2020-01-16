@@ -1,5 +1,3 @@
-'use strict';
-
 const mainNav = document.querySelector('.main-nav');
 const menu = mainNav.querySelector('.menu');
 const buttonMenu = mainNav.querySelector('.page-header__button');

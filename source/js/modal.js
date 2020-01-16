@@ -1,5 +1,3 @@
-'use strict';
-
 const modalCallback = document.querySelector('.modal--callback');
 const closeCallback = modalCallback.querySelector('.modal__button-close');
 const buttonCallback = document.querySelector('.page-header__callback');
