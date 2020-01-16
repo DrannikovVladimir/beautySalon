@@ -16,19 +16,24 @@
 }
 
 .team-list__image {
+  width: 225px;
+
   vertical-align: middle;
+  text-align: center;
 
   transition: 0.4s;
 }
 
 .team-list__image-wrapper {
   overflow: hidden;
+  width: 225px;
 }
 
 .team-list__content-wrapper {
-  width: 200px;
+  width: 225px;
   margin: 0 auto;
   padding: 20px 10px;
+  box-sizing: border-box;
 
   background-color: #FFFFFF;
 }
@@ -54,5 +59,11 @@
         transform: none;
       }
     }
+  }
+}
+
+@media (max-width: 550px) {
+  .team-list__image-wrapper {
+    width: 240px;
   }
 }
